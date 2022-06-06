@@ -1,0 +1,5 @@
+inicio
+const
+entero MAX=10;
+visua "Hola",MAX;
+fin
