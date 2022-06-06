@@ -1,5 +1,5 @@
 inicio
-const
-entero MAX=10;
-visua "Hola",MAX;
+entero A,B,C;
+A=B+C;
+visua "A";
 fin

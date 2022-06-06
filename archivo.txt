@@ -1,3 +1,8 @@
-Inicio
-visua "Hola";
+inicio
+const
+entero MAX=10;
+cadena MENSAJE="BIENVENIDOS AL SISTEMA";
+real PI=3.1416;
+
+visua "El valor de PI es =",PI;
 fin

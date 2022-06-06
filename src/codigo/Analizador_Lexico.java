@@ -194,7 +194,7 @@ public class Analizador_Lexico extends javax.swing.JFrame {
         {
             modelo.removeRow(i);
         }
-        
+        String [] info = new String[2];
         File archivo = new File("archivo.txt");
         PrintWriter escribir;
         try {
@@ -223,7 +223,6 @@ public class Analizador_Lexico extends javax.swing.JFrame {
                         resultado += "Simbolo no existe\n";
                         break;
                     case Identificador: case Numero: case Reservada:
-                        String [] info = new String[2];
                         info[0] = tokens.toString();
                         info[1] = lexer.lexeme;
                         modelo.addRow(info);
@@ -231,7 +230,10 @@ public class Analizador_Lexico extends javax.swing.JFrame {
                        break;
                     
                     default:
-                        resultado += "Token: " + tokens + "\n";
+                        info[0] = "Token"; 
+                        info[1] = tokens.toString();
+                        modelo.addRow(info);
+                      //  resultado += "Token: " + tokens + "\n";
                         break;
                      
                 }
